@@ -1,0 +1,49 @@
+\begin{frame}{Knowledge Graph Based system}
+    
+    % \begin{figure} [H]
+    %     \begin{center}
+    %         \includegraphics[scale=0.6]{images/.pdf} 
+    %         \caption{Experiments Protocol.} 
+    %     \end{center}
+    % \end{figure}
+
+\end{frame}
+
+\begin{frame}{Knowledge Graph Based system}
+    
+    % \begin{figure} [H]
+    %     \begin{center}
+    %         \includegraphics[scale=0.6]{images/.pdf} 
+    %         \caption{Experiments Protocol.} 
+    %     \end{center}
+    % \end{figure}
+
+\end{frame}
+
+\begin{frame}{Information Retrieval ontology}
+    
+    \begin{Verbatim}
+        :SelectedCategory rdf:type owl:Class ;
+                rdfs:subClassOf :Category ,
+                                [ rdf:type owl:Restriction ;
+                                    owl:onProperty :categorises ;
+                                    owl:allValuesFrom :CandidateDocument
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                    owl:onProperty :enablesCategory ;
+                                    owl:allValuesFrom :EnabledCategory
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasSubcategory ;
+                                    owl:allValuesFrom :SelectedCategory
+                                ] .
+    
+        :SearchContext rdf:type owl:Class ;
+                    rdfs:subClassOf :Search ,
+                                    [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasSearchCategory ;
+                                        owl:allValuesFrom :SelectedCategory
+                                    ] .
+    \end{Verbatim}
+
+\end{frame}

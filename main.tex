@@ -1,0 +1,78 @@
+\input{settings}
+
+\title{Knowledge Graph-based System for Technical Document Retrieval}
+\subtitle{A deductive reasoning-focused exploration}
+\author{Matthias Sesboüé}
+\date{September 5, 2024}
+
+\begin{document}
+    \frame{
+    \centering
+    \includegraphics[height = 4cm]{logoLITIS}
+    
+    \includegraphics[height = 1.3cm]{TutellesLITIS}
+    }
+    \frame{\titlepage}
+    
+    \section[Table of content]{}
+    \frame
+    {
+    \frametitle{Table of content}
+    \tableofcontents
+    %   \begin{columns}[t]
+    % \begin{column}{5cm}
+    % \tableofcontents[sections={1-4}] \end{column}
+    %  \begin{column}{5cm} \tableofcontents[sections={3-4}]
+    %  \end{column}
+    % \end{columns}
+    }
+    
+    \input{slides/traceparts}
+    % Traceparts presentation
+    % Traceparts CAD-content plateform
+    % Description des utilisateurs
+    % Searches descriptions (+ examples)
+    % Description des données (+ examples)
+    % Description des possibilité de recherche (text, categories, catalogues)
+
+    \input{slides/tp_ir_challenge}
+    % Introduce common approches to IR (SOTA IR)
+    % TP search system (+ diagram)
+    % Why is TP search system not working that well
+    % (short texts, mulitlingual text, tehcnical text, acronyms, notations, homonyms, synonyms ...)
+    
+    \input{slides/responding_project}
+    % Our proposition, an approache based-on KG
+    % Why this approach makes sense from a SOTA perspective
+    % Our contributions
+    % We adopted a top down approach from a KG system study down to a KG-based system implementation
+    % Manuscript summary Diagram + what we explored in the manuscript + what we are going to touch on in the defense
+    % A few words on the notion of KGs ?
+    % Introduce the plan
+
+    \input{slides/tp_experiments}
+    % A first approach, from a text-based system to a KG-based one + Objectif (+ diagrams)
+    % Experiment protocol
+    % Experiments settings (series of the same diagram with greyed components)
+    % Results (Two tables) + Main conclusions
+    
+    \input{slides/ir_owl_reasoning}
+    % Our second exploratory approach (we try to push as much knowledge as possible down to the KG)
+    % A few words on the KG definition
+    % Novelty of this approach : OWL reasoning mostly used offline, we propose to use it at runtime (in IR) (Stream reasoning)
+    % Pizza ontology as an example because of time constraints
+    % Knowledge modelling approach (C-box diagram)
+    % IR ontology
+    % Align with the KG definition
+    % Advantages and limitations
+
+    \input{slides/conlusion_perspectives}
+    % We implemented only portions of our KGBS
+    % We did not touch on OLAF there but it is continuously developped by Marion
+    % Expand the KG for Traceparts (+ diagram dream onto-based system)
+    
+    \input{slides/thank_you}
+
+    % \input{slides/extra}
+
+\end{document}
