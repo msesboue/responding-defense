@@ -1,0 +1,83 @@
+\input{settings}
+
+\title{Knowledge Graph-based System for Technical Document Retrieval}
+\subtitle{A deductive reasoning-focused exploration}
+\author{Matthias Sesboüé}
+\date{September 5, 2024}
+
+\begin{document}
+    \frame{
+    \centering
+    \includegraphics[height = 4cm]{logoLITIS}
+    
+    \includegraphics[height = 1.3cm]{TutellesLITIS}
+    }
+    \frame{\titlepage}
+    
+    \section[Table of content]{}
+    \frame
+    {
+    \frametitle{Table of content}
+    \tableofcontents
+    %   \begin{columns}[t]
+    % \begin{column}{5cm}
+    % \tableofcontents[sections={1-4}] \end{column}
+    %  \begin{column}{5cm} \tableofcontents[sections={3-4}]
+    %  \end{column}
+    % \end{columns}
+    }
+    
+    \input{slides/introduction}
+    % Responding thesis + start date + CIFRE ANRT -> TO ENHANCE
+    % Traceparts presentation -> OK
+
+    \input{slides/sota_ir_kg}
+    % SOTA IR system components -> OK
+    % BM25 -> OK
+    % KG definition  -> OK
+
+    \input{slides/KGBS}
+    % iteratively introduce each components  -> TODO
+    % end up with red squares on each parts to introduce our contributions  -> TODO
+
+    \input{slides/context}
+    % Description des utilisateurs
+    % Searches descriptions (+ examples) -> OK
+    % Description des données (+ examples) -> OK
+    % Description des possibilité de recherche (text, categories, catalogues)
+    % TP search system limitations (short texts, mulitlingual text, technical text, acronyms, notations, homonyms, synonyms ...) -> OK
+    % TP search system (+ diagram) -> OK
+    
+    \input{slides/our_approach}
+    % objective: text-based vs concept-based system -> OK
+    % introduce experiments systems with a growing diagram -> TODO
+    % Evaluation metrics + results for TP system? -> ADD TP SYSTEM VALUES
+
+    \input{slides/tp_experiments}
+    % Experiment protocol -> OK
+    % + implementation details -> OK
+
+    \input{slides/tp_experiments_results}
+    % Diagram of the TP text-based system with the baseline results -> TODO
+    % With a growing table (and a recall of the systems diagrams?) introduce concept-based and KG-based system results -> TODO
+    
+    \input{slides/ir_owl_reasoning}
+    % Focus on knowledge modeling for IR, Our second exploratory approach (we try to push as much knowledge as possible down to the KG), Novelty of this approach : OWL reasoning mostly used offline, we propose to use it at runtime (in IR) (Stream reasoning) -> OK
+    % Knowledge modelling approach (C-box diagram) -> OK
+    % Our proposed ontology: IR ontology -> OK
+    % Pizza ontology as an example because of time constraints, Pizza onto is composed of pizzas, ingredients, pizza bases etc. -> TO COMPLETE
+    % Align with the KG definition -> OK
+    % Process diagram ? + example of searches and results -> TODO
+
+    \input{slides/conlusion_future_works}
+    % Contributions
+    % We implemented only portions of our KGBS
+    % We did not touch on OLAF there but it is continuously developped by Marion
+    % Expand the KG for Traceparts (+ diagram dream onto-based system)
+    % Publications
+    
+    \input{slides/thank_you}
+
+    % \input{slides/extra}
+
+\end{document}
