@@ -14,9 +14,13 @@
     }
     \frame{\titlepage}
     
-    \section[Table of content]{}
-    \frame
-    {
+    
+    \input{slides/introduction}
+    % Responding thesis + start date + CIFRE ANRT -> TO ENHANCE
+    % Traceparts presentation -> OK
+
+    % \section[Table of content]{}
+    \frame {
     \frametitle{Table of content}
     \tableofcontents
     %   \begin{columns}[t]
@@ -27,10 +31,6 @@
     % \end{columns}
     }
     
-    \input{slides/introduction}
-    % Responding thesis + start date + CIFRE ANRT -> TO ENHANCE
-    % Traceparts presentation -> OK
-
     \input{slides/sota_ir_kg}
     % SOTA IR system components -> OK
     % BM25 -> OK
@@ -61,11 +61,11 @@
     % Diagram of the TP text-based system with the baseline results -> OK
     % With a growing table (and a recall of the systems diagrams?) introduce concept-based and KG-based system results -> OK
     
-    \input{slides/ir_owl_reasoning}
+    % \input{slides/ir_owl_reasoning}
     % Focus on knowledge modeling for IR, Our second exploratory approach (we try to push as much knowledge as possible down to the KG), Novelty of this approach : OWL reasoning mostly used offline, we propose to use it at runtime (in IR) (Stream reasoning) -> OK
     % Knowledge modelling approach (C-box diagram) -> OK
     % Our proposed ontology: IR ontology -> OK
-    % Pizza ontology as an example because of time constraints, Pizza onto is composed of pizzas, ingredients, pizza bases etc. -> TO COMPLETE
+    % Pizza ontology as an example because of time constraints, Pizza onto is composed of pizzas, ingredients, pizza bases etc. -> OK
     % Align with the KG definition -> OK
     % Process diagram ? + example of searches and results -> TODO
 
