@@ -1,70 +1,79 @@
-\section{Experiments}
+% \begin{frame}{Experiments protocol}
 
-\begin{frame}{Experiments protocol}
+%     \begin{figure} [H]
+%         \begin{center}
+%             \includegraphics[scale=0.55]{images/tp-search-expe-setting.pdf} 
+%             \caption{Experiments Protocol.} 
+%         \end{center}
+%     \end{figure}
+
+% \end{frame}
+
+% \begin{frame}{KG-based systems}
+
+%     3 distinct systems built iteratively:
+%     \begin{itemize}
+%         \item \emph{Text-based system (baseline)}
+%         \item Concept-based system
+%         % \item Knowledge Graph-based system
+%         % \item Text-based system with implicit knowledge
+%         % \item Concept-based system with implicit knowledge
+%         \item \textbf{Knowledge Graph-based system with implicit knowledge}
+%     \end{itemize}
+
+%     % Systems implementations:
+%     % \begin{itemize}
+%     %     \item User search concept matching as an information retrieval task.
+%     %     \item Leverage user search history as implicit knowledge.
+%     %     \item Query concepts enrichment as a graph traversal task.
+%     % \end{itemize}
+
+% \end{frame}
+
+\begin{frame}{Traceparts Knowledge Graph}
 
     \begin{figure} [H]
         \begin{center}
-            \includegraphics[scale=0.55]{images/tp-search-expe-setting.pdf} 
-            \caption{Experiments Protocol.} 
+            \includegraphics[scale=0.8]{images/tp_kg.pdf} 
+            \caption{Traceparts Knowledge Graph} 
         \end{center}
     \end{figure}
 
 \end{frame}
 
-\begin{frame}{Experiments}
+% \begin{frame}{Text-based system (baseline)}
 
-    6 distinct systems built iteratively:
-    \begin{itemize}
-        \item \emph{Text-based system (baseline)}
-        \item Concept-based system
-        % \item Knowledge Graph-based system
-        % \item Text-based system with implicit knowledge
-        % \item Concept-based system with implicit knowledge
-        \item \textbf{Knowledge Graph-based system with implicit knowledge}
-    \end{itemize}
-    
-    Systems implementations:
-    \begin{itemize}
-        \item User search concept matching problem as an information retrieval task.
-        \item Leverage user search history as implicit knowledge.
-        \item Query concept enrichment as a graph traversal task.
-    \end{itemize}
+%     \begin{figure} [H]
+%         \begin{center}
+%             \includegraphics[scale=1]{images/tp-expe-text-based-sys.pdf} 
+%             \caption{Text-based system (baseline)} 
+%         \end{center}
+%     \end{figure}
 
-\end{frame}
+% \end{frame}
 
-\begin{frame}{Text-based system (baseline)}
+% \begin{frame}{Text-based system (baseline) results}
 
-    \begin{figure} [H]
-        \begin{center}
-            \includegraphics[scale=1]{images/tp-expe-text-based-sys.pdf} 
-            \caption{Text-based system (baseline)} 
-        \end{center}
-    \end{figure}
+%     \begin{table}[htbp]
+%         \begin{center}
+%         \small
+%         \begin{tabular}{c|cc|}
+%             \toprule
+%             \multicolumn{1}{l}{}               & \multicolumn{2}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Text-based\\ system (baseline)\end{tabular}}} \\ \cmidrule(lr){2-3}
+%             \multicolumn{1}{c|}{\textbf{@k $\downarrow$}}    & \multicolumn{1}{c}{\textbf{MAP@k}} & \textbf{BM@k} \\ \cmidrule(lr){2-3}
+%             \multicolumn{1}{c|}{\textbf{@5}}   & \multicolumn{1}{c}{0.061}          & 0.114       \\ 
+%             \multicolumn{1}{c|}{\textbf{@25}}  & \multicolumn{1}{c}{0.064}          & 0.148       \\ 
+%             \multicolumn{1}{c|}{\textbf{@50}}  & \multicolumn{1}{c}{0.064}          & 0.157       \\ 
+%             \multicolumn{1}{c|}{\textbf{@100}} & \multicolumn{1}{c}{0.064}          & 0.161       \\ 
+%             \multicolumn{1}{c|}{\textbf{@350}} & \multicolumn{1}{c}{0.064}          & 0.164      \\ \bottomrule
+%         \end{tabular}
+%         \caption{
+%             Text-based system (baseline) results for different k values.
+%         }\label{tab:comp-text-concept-kg}
+%     \end{center}
+%     \end{table} 
 
-\end{frame}
-
-\begin{frame}{Text-based system (baseline) results}
-
-    \begin{table}[htbp]
-        \begin{center}
-        \small
-        \begin{tabular}{c|cc|}
-            \toprule
-            \multicolumn{1}{l}{}               & \multicolumn{2}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Text-based\\ system (baseline)\end{tabular}}} \\ \cmidrule(lr){2-3}
-            \multicolumn{1}{c|}{\textbf{@k $\downarrow$}}    & \multicolumn{1}{c}{\textbf{MAP@k}} & \textbf{BM@k} \\ \cmidrule(lr){2-3}
-            \multicolumn{1}{c|}{\textbf{@5}}   & \multicolumn{1}{c}{0.061}          & 0.114       \\ 
-            \multicolumn{1}{c|}{\textbf{@25}}  & \multicolumn{1}{c}{0.064}          & 0.148       \\ 
-            \multicolumn{1}{c|}{\textbf{@50}}  & \multicolumn{1}{c}{0.064}          & 0.157       \\ 
-            \multicolumn{1}{c|}{\textbf{@100}} & \multicolumn{1}{c}{0.064}          & 0.161       \\ 
-            \multicolumn{1}{c|}{\textbf{@350}} & \multicolumn{1}{c}{0.064}          & 0.164      \\ \bottomrule
-        \end{tabular}
-        \caption{
-            Text-based system (baseline) results for different k values.
-        }\label{tab:comp-text-concept-kg}
-    \end{center}
-    \end{table} 
-
-\end{frame}
+% \end{frame}
 
 \begin{frame}{Concept-based system}
 
@@ -100,18 +109,18 @@
 
 \end{frame}
 
-\begin{frame}{Knowledge Graph-based system with implicit knowledge}
+\begin{frame}{KG-based system with implicit knowledge}
 
     \begin{figure} [H]
         \begin{center}
             \includegraphics[scale=0.45]{images/tp-expe-kg-based-search-hist-sys.pdf} 
-            \caption{Knowledge Graph-based system with implicit knowledge} 
+            \caption{KG-based system with implicit knowledge} 
         \end{center}
     \end{figure}
 
 \end{frame}
 
-\begin{frame}{Knowledge Graph-based system with implicit knowledge results}
+\begin{frame}{KG-based system with implicit knowledge results}
 
 \begin{table}[htbp]
         \begin{center}
@@ -134,24 +143,24 @@
 
 \end{frame}
 
-\begin{frame}{Quantitative results}
+% \begin{frame}{Quantitative results}
 
-    \begin{table}[htbp]
-        \begin{center}
-        \small
-        \begin{tabular}{ccc}
-            \toprule
-            {} &  \textbf{No results}  &  \textbf{\begin{tabular}[c]{@{}c@{}}Less than 400\\ results (non empty)\end{tabular}} \\
-            \midrule
-            \textbf{\begin{tabular}[c]{@{}c@{}}Text-based\\ system (baseline)\end{tabular}}              &     64.48\% &              35.44\% \\
-            \textbf{\begin{tabular}[c]{@{}c@{}}Concept-based\\ system\end{tabular}}                      &     11.43\% &              \textbf{88.36\%} \\
-            \textbf{\begin{tabular}[c]{@{}c@{}}KG-based system\\with search history\end{tabular}}      &     \textbf{8.10\%} &       51.59\% \\
-            \bottomrule
-        \end{tabular}
-        \caption{
-            Comparing all search systems results set corpus.
-        }\label{tab:comp-all-sys-res-list}
-    \end{center}
-    \end{table}
+%     \begin{table}[htbp]
+%         \begin{center}
+%         \small
+%         \begin{tabular}{ccc}
+%             \toprule
+%             {} &  \textbf{No results}  &  \textbf{\begin{tabular}[c]{@{}c@{}}Less than 400\\ results (non empty)\end{tabular}} \\
+%             \midrule
+%             \textbf{\begin{tabular}[c]{@{}c@{}}Text-based\\ system (baseline)\end{tabular}}              &     64.48\% &              35.44\% \\
+%             \textbf{\begin{tabular}[c]{@{}c@{}}Concept-based\\ system\end{tabular}}                      &     11.43\% &              \textbf{88.36\%} \\
+%             \textbf{\begin{tabular}[c]{@{}c@{}}KG-based system\\with search history\end{tabular}}      &     \textbf{8.10\%} &       51.59\% \\
+%             \bottomrule
+%         \end{tabular}
+%         \caption{
+%             Comparing all search systems results set corpus.
+%         }\label{tab:comp-all-sys-res-list}
+%     \end{center}
+%     \end{table}
 
-\end{frame}
+% \end{frame}

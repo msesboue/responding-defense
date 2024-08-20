@@ -1,83 +1,64 @@
 \input{settings}
 
 \title{Knowledge Graph-based System for Technical Document Retrieval}
-\subtitle{A deductive reasoning-focused exploration}
-\author{PhD student: Matthias SESBO{\"U}{\'E}\\PhD directed by Cecilia ZANNI-MERK\\and supervised by Nicolas DELESTRE and Jean-Philippe KOTOWICZ}
+\subtitle{A deductive reasoning-focused exploration\vspace{-1em}}
+\author[Matthias SESBO{\"U}{\'E}]{PhD student: Matthias SESBO{\"U}{\'E}\\Directed by Cecilia ZANNI-MERK\\Supervised by Nicolas DELESTRE and Jean-Philippe KOTOWICZ\vspace{-1em}}
 \date{September 5, 2024}
 
 \begin{document}
+    % \frame{
+    % \centering
+    % \includegraphics[height = 4cm]{logoLITIS}
+    
+    % \includegraphics[height = 1.3cm]{TutellesLITIS}
+    % }
     \frame{
-    \centering
-    \includegraphics[height = 4cm]{logoLITIS}
-    
-    \includegraphics[height = 1.3cm]{TutellesLITIS}
-    }
-    \frame{\titlepage}
-    
-    
-    \input{slides/introduction}
-    % Responding thesis + start date + CIFRE ANRT -> TO ENHANCE
-    % Traceparts presentation -> OK
+        \titlepage
 
-    % \section[Table of content]{}
+        \begin{figure}[b]
+            \tiny
+            \begin{center}
+                \includegraphics[height=0.9cm]{images/INSA.pdf}
+                \hfill
+                \includegraphics[height=0.9cm]{images/LITIS.pdf}
+                \hfill
+                \includegraphics[height=0.9cm]{images/MIIS.png}
+                \hfill
+                \includegraphics[height=0.9cm]{images/ANRT.png}
+                \hfill
+                \includegraphics[height=0.9cm]{images/traceparts_logo.png}  
+            \end{center}
+        \end{figure}
+    }
+    
+    
     \frame {
-    \frametitle{Table of content}
+    \frametitle{Table of contents}
     \tableofcontents
-    %   \begin{columns}[t]
-    % \begin{column}{5cm}
-    % \tableofcontents[sections={1-4}] \end{column}
-    %  \begin{column}{5cm} \tableofcontents[sections={3-4}]
-    %  \end{column}
-    % \end{columns}
     }
+    \section{Introduction}
+    \input{slides/introduction}
     
-    \input{slides/sota_ir_kg}
-    % SOTA IR system components -> OK
-    % BM25 -> OK
-    % KG definition  -> OK
-
-    \input{slides/KGBS}
-    % iteratively introduce each components  -> OK
-    % end up with red squares on each parts to introduce our contributions  -> OK
-
+    \section[Context]{Application context}
     \input{slides/context}
-    % Description des utilisateurs
-    % Searches descriptions (+ examples) -> OK
-    % Description des données (+ examples) -> OK
-    % Description des possibilité de recherche (text, categories, catalogues)
-    % TP search system limitations (short texts, mulitlingual text, technical text, acronyms, notations, homonyms, synonyms ...) -> OK
-    % TP search system (+ diagram) -> OK
-    
+
     \input{slides/our_approach}
-    % objective: text-based vs concept-based system -> OK
-    % introduce experiments systems with a growing diagram -> TODO
-    % Evaluation metrics + results for TP system? -> ADD TP SYSTEM VALUES
-
-    \input{slides/tp_experiments}
-    % Experiment protocol -> OK
-    % + implementation details -> OK
-
-    % \input{slides/tp_experiments_results}
-    % Diagram of the TP text-based system with the baseline results -> OK
-    % With a growing table (and a recall of the systems diagrams?) introduce concept-based and KG-based system results -> OK
     
-    % \input{slides/ir_owl_reasoning}
-    % Focus on knowledge modeling for IR, Our second exploratory approach (we try to push as much knowledge as possible down to the KG), Novelty of this approach : OWL reasoning mostly used offline, we propose to use it at runtime (in IR) (Stream reasoning) -> OK
-    % Knowledge modelling approach (C-box diagram) -> OK
-    % Our proposed ontology: IR ontology -> OK
-    % Pizza ontology as an example because of time constraints, Pizza onto is composed of pizzas, ingredients, pizza bases etc. -> OK
-    % Align with the KG definition -> OK
-    % Process diagram ? + example of searches and results -> TODO
-
+    \section[Evaluation]{Evaluation setup}
+    \input{slides/eval_setup}
+    
+    \section[KG-based system]{Knowledge Graph-Based System (KGBS)}
+    \input{slides/KGBS}
+    
+    \section[KG-based IR]{KG-based Information Retrieval}
+    \input{slides/tp_experiments}
+    
+    \section[Conclusion]{Conclusion and future works}
     \input{slides/conlusion_future_works}
-    % Contributions -> OK
-    % We implemented only portions of our KGBS -> OK
-    % We did not touch on OLAF there but it is continuously developped by Marion -> OK
-    % Expand the KG for Traceparts (+ diagram dream onto-based system) -> OK
-    % Publications -> OK
     
     \input{slides/thank_you}
-
-    % \input{slides/extra}
+    
+    \miniframesoff
+    \input{slides/extra}
 
 \end{document}

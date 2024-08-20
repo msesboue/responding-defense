@@ -13,6 +13,7 @@
 \useinnertheme{circles}
 \beamertemplatenavigationsymbolsempty
 \setbeamercovered{transparent}
+\setbeamertemplate{page number in head/foot}[totalframenumber]
 
 \usepackage{mathtools}
 
@@ -39,3 +40,16 @@
 
 \pgfdeclareimage[height=0.5cm]{logo}{TutellesLITIS}
 \logo{\pgfuseimage{logo}}
+
+\makeatletter
+\let\beamer@writeslidentry@miniframeson=\beamer@writeslidentry%
+\def\beamer@writeslidentry@miniframesoff{%
+  \expandafter\beamer@ifempty\expandafter{\beamer@framestartpage}{}% does not happen normally
+  {%else
+    % removed \addtocontents commands
+    \clearpage\beamer@notesactions%
+  }
+}
+\newcommand*{\miniframeson}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframeson}
+\newcommand*{\miniframesoff}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframesoff}
+\makeatother
