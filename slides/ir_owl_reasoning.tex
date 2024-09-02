@@ -39,7 +39,8 @@
 
     Pizza ontology:
     \begin{itemize}
-        \item Well-knowledge ontology built to introduce RDF/RDFS/OWL with examples (and even SHACL)
+        \item Due to time constraints, we use the Pizza ontology for our demonstration.
+        \item Well-known ontology built to introduce RDF/RDFS/OWL with examples (and even SHACL)
         \item Simple ontology with class hierarchies of:
         \begin{itemize}
             \item \emph{Pizza} (\emph{hasTopping}, \emph{hasBase})
@@ -48,16 +49,29 @@
         \end{itemize} 
     \end{itemize}
 
-    \begin{itemize}
-        \item We use the Pizza ontology for demonstration in interest of time constraints 
-    \end{itemize}
-
 \end{frame}
 
-\begin{frame}{Pizza ontology Knowledge Graph}
+\begin{frame}{Pizza ontology KG-based IR system}
 
         \begin{center}
             \includegraphics[scale=0.65]{images/pizza-demo-kg.pdf} 
         \end{center}
+
+\end{frame}
+
+\begin{frame}{Advantages and limitations}
+
+    Advantages:
+    \begin{itemize}
+        \item Explicitly defines the notions of documents and categories
+        \item New taxonomies can easily be integrated
+    \end{itemize}
+
+    Limitations:
+    \begin{itemize}
+        \item Requires one ontology instance per user query (Scaling limitation)
+        \item Restricting search by conjunction of categories is a challenge (OWA limitations)
+        \item Assumes an ontology structured as a set of interlinked taxonomies
+    \end{itemize}
 
 \end{frame}
